@@ -5,6 +5,9 @@
 ```
 pip install keyboard
 ```
-2. run "python keylogger.py"
-3. press esc to stop the program
-4. check the keylogs at keylogs.txt
+2. run
+```
+python keylogger.py
+```
+4. press esc key to stop the program
+5. check the keylogs at keylogs.txt
